@@ -1,4 +1,4 @@
 # Web-Development
-This has Calculator made purely using HTML CSS and Javascript
+These are few of my personal project I did in my free time.
 
 Enjoy!!
