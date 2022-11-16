@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans;
+    margin: 0;
+}
+
+.page-container {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'item personal-det'
+    'item payment';
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.main-header {
+    background-color: #43281c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.logo-title {
+    font-size: 1.5em;
+    color: #FBF2C0;
+    font-weight: bold;
+}
+
+.cart {
+    background-color: #eee1d5;
+    border-radius: 10px;
+    grid-area: item;
+    padding-bottom: 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.item {
+    color: #885a2d;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 20px 0px 20px 10px;
+}
+
+.quantity {
+    grid-area: quantity;
+}
+
+.item-name {
+    grid-area: product;
+    font-weight: bold;
+}
+
+.price {
+    grid-area: price;
+}
+
+.item-subtype {
+    grid-area: subtype;
+    font-weight: lighter;
+    font-size: 14px;
+    color:  rgb(139, 114, 88);
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 0.4fr;
+    grid-template-areas: 
+    'quantity product . price'
+    'quantity subtype . price';
+    margin-left: 10px;
+    margin: 10px;
+}
+
+.division {
+    margin: 10px;
+    background-color: rgb(221,184,146);
+    height: 2px;
+    border: none;
+}
+
+.personal-det-card {
+    background-color: #eee1d5;
+    border-radius: 15px;
+    grid-area: personal-det;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.customer-details, .card-details, .cvv-details {
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.name-input {
+    background-color: rgba(0,0,0,0);
+    border: 2px #885a2d solid;
+    padding: 8px;
+    border-radius: 100px;
+    text-indent: 18px;
+    font-size: 18px;
+    width: 100%;
+}
+
+.input-label {
+    background-color: #eee1d5;
+    color: #885a2d;
+    font-size: 11px;
+    position: absolute;
+    left: 35px;
+    top: -7px;
+    padding: 0 2px;
+}
+
+.payment-details {
+    background-color: #eee1d5;
+    border-radius: 15px;
+    grid-area: payment;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
+
+.subtotal {
+    grid-area: subtotal;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.subtotal-amt {
+    grid-area: subtotal-amt;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.tax {
+    grid-area: tax;
+    margin-bottom: 25px;
+}
+
+.tax-amt {
+    grid-area: tax-amt;
+    margin-bottom: 25px;
+}
+
+.total {
+    grid-area: total;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.total-amt {
+    grid-area: total-amt;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.amount {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: 
+    'subtotal .  subtotal-amt'
+    'tax .  tax-amt'
+    'total .  total-amt ';
+}
+
+.bill {
+    display: flex;
+    justify-content: center;
+}
+
+.order-button {
+    width: 95%;
+    border: none;
+    border-radius: 100px;
+    background-color: #deb993;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}

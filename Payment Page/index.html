@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>Coffee Masters</title>
+</head>
+<body>
+    <header class="main-header">
+        <img class="logo" src="./coffee_masters_logo.png">
+        <div class="logo-title">Coffee Masters</div>
+    </header>
+    <div class="page-container">
+        <div class="cart">
+            <div class="item">Items</div>
+            <div class="cart-item">
+                <div class="quantity">1x</div>
+                <div class="item-name">Cappucino</div>
+                <div class="price">$6.00</div>
+                <div class="item-subtype">Light Foam</div> 
+            </div>
+            <hr class="division">
+            <div class="cart-item">
+                <div class="quantity">1x</div>
+                <div class="item-name">Cappucino</div>
+                <div class="price">$7.90</div>
+                <div class="item-subtype">Almond Milk<br>Double Espresso Shot</div>
+            </div>
+            <hr class="division">
+            <div class="cart-item">
+                <div class="quantity">1x</div>
+                <div class="item-name">Croissant</div>
+                <div class="price">$5.37</div>
+                <div class="item-subtype">Butter</div> 
+            </div>
+        </div>
+        <div class="personal-det-card">
+            <h2 class="item">Name</h2>
+            <div class="customer-details">
+                <label for="name-entry" class="input-label">Name</label>
+                <input id="name-entry" class="name-input">
+            </div>
+        </div>
+
+        <div class="payment-details">
+            <h2 class="item">Payment</h2>
+            <div class="card-details">
+                <label for="name-entry" class="input-label">Card Number</label>
+                <input id="name-entry" class="name-input">
+            </div>
+            <div class="cvv-details">
+                <label for="name-entry" class="input-label">CVV</label>
+                <input id="name-entry" class="name-input">
+            </div>
+        </div>  
+    </div>
+    <div class="bill">
+        <div class="amount">
+            <div class="subtotal">Subtotal:</div>
+            <div class="subtotal-amt">$19.27</div>
+            <div class="tax">Tax:</div>
+            <div class="tax-amt">&0.96</div>
+            <div class="total">Total:</div>
+            <div class="total-amt">$20.23</div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="order-button">Place Order</button>
+    </div>
+</body>
+</html>
